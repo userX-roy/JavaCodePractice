@@ -1,5 +1,5 @@
 *.class
 .metadata
 JavaSource/.classpath
-JavaedSource/.settings
+JavaSource/.settings
 JavaSource/.project
