@@ -6,6 +6,8 @@ public class Main {
 	
 	static float totalPrice = 0.0f;
 	
+	Scanner scanner = new Scanner(System.in);
+	
 	void mainListofProduct() {
 		
 		System.out.println("  ========Welcome To Our Store========");
@@ -16,7 +18,6 @@ public class Main {
 		System.out.println("            3) Cosmetics");
 		
 		System.out.println("Please Enter Your Choice :  1 or 2 or 3 or 4");
-		Scanner scanner = new Scanner(System.in);
 		int option = scanner.nextInt();
 		
 		switch(option) {
@@ -42,13 +43,18 @@ public class Main {
 			break;
 		}
 		
-		scanner.close(); // scanner class closed to avoid resource leak
 	}
 
 	public static void main(String[] args) {
-		Main mainF = new Main();
-		mainF.mainListofProduct(); //All Types of Item will be listed by this method call
-		System.out.println(totalPrice);
+		new Main().mainListofProduct(); //All Types of Item will be listed by this method call
+		new OtherClasses().afterCompletionBuy(); // will show user about buying details
+		
+		//closing all the scanner class
+		new Main().scanner.close();
+		new Fruit().sc.close();
+		new Vegetables().sc.close();
+		new Cosmetics().sc.close();
+		new OtherClasses().scanner2.close();
 	}
 	
 

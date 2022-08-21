@@ -3,8 +3,12 @@ package nareshit.assigenment.com;
 import java.util.Scanner;
 
 class Vegetables {
+	
+	static float priceV = 0.0f;
+	
+	Scanner sc = new Scanner(System.in);
+	
 	float vegetablesMethod(){
-		float price = 0.0f; // to hold the Fruit price inTotal
 		
 		System.out.println("-----------------------------------------");
 		System.out.println("   225 -----Potato ------1 kg is 41");
@@ -14,7 +18,6 @@ class Vegetables {
 		System.out.println("-----------------------------------------");
 		System.out.println("        Please Enter Fruit code : ");
 		
-		Scanner sc = new Scanner(System.in);
 		int vCode = sc.nextInt();
 		
 		switch(vCode) {
@@ -24,25 +27,25 @@ class Vegetables {
 			/*I am Not changing this variables name to save time , though it is not advisable to do so , it makes program 
 			 * hard to read 
 			 */
-			price = 41.0f*mangoAmount;
+			priceV = 41.0f*mangoAmount;
 			break;
 		
 		case 226:
 			System.out.println("How much KG Brinjal you want ? ");
 			float appleAmount = sc.nextFloat();
-			price = 35.0f*appleAmount;
+			priceV = 35.0f*appleAmount;
 			break;
 
 		case 227:
 			System.out.println("How much KG Carrots you want ? ");
 			float bananansAmount = sc.nextFloat();
-			price = 60.0f*bananansAmount;
+			priceV = 60.0f*bananansAmount;
 			break;
 
 		case 228:
 			System.out.println("How much KG Beetroot you want ? ");
 			float papayaAmount = sc.nextFloat();
-			price = 44.0f*papayaAmount;
+			priceV = 44.0f*papayaAmount;
 			break;
 
 		default:
@@ -50,7 +53,7 @@ class Vegetables {
 			vegetablesMethod();
 			break;
 		}
-		sc.close();
-		return price;
+		
+		return priceV;
 	}
 }
