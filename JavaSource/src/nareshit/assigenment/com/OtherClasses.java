@@ -19,6 +19,6 @@ public class OtherClasses {
 			scanner2.close();
 			return;
 		}
-		
+		System.out.println("Hello");
 	}
 }
