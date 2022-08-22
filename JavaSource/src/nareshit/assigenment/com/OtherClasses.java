@@ -65,9 +65,12 @@ class OtherClasses {
 		}
 	}
 	
-	// responsible for printing the buying summaary
+	// responsible for printing the buying summary
 	void afterCompletionBuy() {
 		addressInput(); // will input customer address
+		
+		System.out.println(" ");
+		System.out.println(" ");//To beautify output
 		
 		System.out.println("=======================================================");
 		
@@ -75,9 +78,11 @@ class OtherClasses {
 		System.out.println(" ");
 		eachProductCount(); // will list down each types of products price individually
 		System.out.println("Your Total Amount is : "+Main.totalPrice);
-		if (Main.totalPrice == 500.0f) {
+		if (Main.totalPrice >= 500.0f) {
+			
 			System.out.println("You won a discount of 5% as you shop more than Rs.500 with us :)");
 			System.out.println("You have to pay us Rs. "+discountCalculator(Main.totalPrice));
+		
 		} 
 		else {
 			System.out.println("You have to pay us Rs. "+discountCalculator(Main.totalPrice));
