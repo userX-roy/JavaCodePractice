@@ -1,0 +1,9 @@
+1 -> Create a Folder called "JavaCodePractice" , that should be your Eclipse Workspace.
+
+2 -> Now inside Eclipse create project called "JavaSource"
+
+3 -> Add all packages from src folder downloaded from github
+
+4 -> run git init command inside "JavaCodePractice" but outside "JavaSource"
+
+5 -> copy .gitignore file from downloaded git repository to "JavaCodePractice".
