@@ -4,6 +4,4 @@
 
 3 -> Add all packages from src folder downloaded from github
 
-4 -> run git init command inside "JavaCodePractice" but outside "JavaSource"
-
-5 -> copy .gitignore file from downloaded git repository to "JavaCodePractice".
+4 -> copy .git folder & .gitignore file inside "JavaCodePractice" but outside "JavaSource"
