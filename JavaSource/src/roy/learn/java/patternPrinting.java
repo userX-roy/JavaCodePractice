@@ -1,6 +1,6 @@
 package roy.learn.java;
 
-public class patternPrinting {
+public class patternPrinting{
 
 	public static void main(String[] args) {
 		//pattern();

@@ -6,7 +6,7 @@ public class Main {
 		/*
 		  can't create object of interface 
 		  new Animal(); -> INVALID
-		  but can create referance variable of that interface , i.e. "Animal animal" is valid
+		  but can create reference variable of that interface , i.e. "Animal animal" is valid
 		  But we can create child class object and assign to interface ref variable
 		  i.e., "Animal animal = new Dog();" is valid
 		 */
@@ -14,6 +14,8 @@ public class Main {
 		
 		animal.eat();
 		animal.run();
+		
+		animal.sound();
 
 	}
 	
@@ -34,6 +36,11 @@ public class Main {
 		public void eat() {
 			System.out.println("Dog is eatting");
 			
+		}
+		@Override
+		public void sound() {
+			Animal.super.sound();
+			System.out.println("Dog also can sound");
 		}
 
 

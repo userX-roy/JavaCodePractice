@@ -16,5 +16,7 @@ public class OutputInJava {
 			//we can evaluate math equation directly in java but use of " " will treate the equation as string
 			System.out.println(78+2);
 			System.out.println("78+2");
+			
 		}
+		
 }

@@ -12,7 +12,7 @@ public class MultInheritence {
 		
 		Animal animal = new Cow(); //UPCASTING
 		/*
-		 In case of upcasting we can create a parent class ref variable pointing to Child class object
+		 In case of up casting we can create a parent class ref variable pointing to Child class object
 		 */
 		animal.run();
 	}
