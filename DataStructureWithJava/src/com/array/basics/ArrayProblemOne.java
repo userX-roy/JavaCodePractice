@@ -1,7 +1,7 @@
 //All Array Problems in this package taken from this video : https://youtu.be/-diAQjYdh_8
 
 
-package array.dsa;
+package com.array.basics;
 
 import java.util.Scanner;
 
